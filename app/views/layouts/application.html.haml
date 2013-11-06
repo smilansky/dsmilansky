@@ -1,0 +1,18 @@
+!!! 5
+%html(lang="en-US")
+  %head
+    %title "Smilansky's Hub"
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %header.navbar.navbar-fixed-top.navbar-inverse
+      %div.navbar-inner
+        %div.container
+          = link_to "Smilansky's Hub", home_path, id: "logo"
+          %nav
+            %ul.nav.pull-right
+              %li
+              = link_to "Home", home_path
+    %div.container
+      = yield
