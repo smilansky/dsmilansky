@@ -19,7 +19,6 @@ development:
   encoding: unicode
   database: dsmilansky_development
   pool: 5
-  username: 
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,7 +47,7 @@ test:
   encoding: unicode
   database: dsmilansky_test
   pool: 5
-  username: 
+  username:  
   password:
 
 production:
@@ -56,5 +55,5 @@ production:
   encoding: unicode
   database: dsmilansky_production
   pool: 5
-  username: 
+  username: danielsmilansky
   password:

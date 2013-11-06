@@ -17,3 +17,9 @@ gem 'jbuilder', '~> 1.0.2'
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
+
+group :production do
+  gem 'rails_12factor'
+end
+
+ruby "2.0.0"
