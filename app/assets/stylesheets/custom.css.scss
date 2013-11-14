@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 section {
@@ -41,12 +41,18 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: inherit;
+}
+
+h4 {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 p {
@@ -73,3 +79,67 @@ p {
   text-decoration: none;
 }
 
+.nav-item {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.nav-item:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* jumbotron */
+
+.jumbotron {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #eeeeee;
+}
+
+.jumbotron h1 {
+  line-height: 1;
+  color: inherit;
+}
+
+.container .jumbotron {
+  border-radius: 6px;
+}
+
+/* buttons */
+
+
+
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 1.33;
+  border-radius: 6px;
+  margin-left: 100px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a {
+  background: transparent;
+}
