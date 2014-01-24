@@ -7,10 +7,10 @@ html {
 }
 
 body {
-  padding-top: 50px;
+  margin: 50px auto;
 }
 
-section {
+section { 
   overflow: auto;
 }
 
@@ -20,6 +20,13 @@ textarea {
 
 .center {
   text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+  margin: 0 0 2ex 0;
+  margin-left: 400px;
+  margin-right: 400px;
 }
 
 .center h1 {
@@ -61,64 +68,29 @@ h4 {
 
 p {
   font-size: 1em;
-  line-height: 1em;
+  line-height: 24px;
+  display: block;
 }
 
 /* header */
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
+.links {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
-.nav-item {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-.nav-item:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* jumbotron */
-
-.jumbotron {
-  padding: 60px;
-  margin-bottom: 30px;
+.wrapper {
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #ffffff;
+  height: 400px;
 }
 
 .jumbotron h1 {
-  line-height: 1;
   color: inherit;
-}
-
-.container .jumbotron {
-  border-radius: 6px;
 }
 
 /* buttons */
@@ -139,11 +111,56 @@ p {
   border-color: #357ebd;
 }
 
+/* links */
+
 a {
-  color: #428bca;
   text-decoration: none;
+  margin-right: 50px;
+  border-bottom: 2px solid red;
+  font-size: 2em;
 }
 
 a {
-  background: transparent;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition: border-color .5s ease-in-out,color .5s ease-in-out;
+  transition:.5s;
+}
+
+a:hover { 
+  color:green;
+  text-decoration: none;  
+ }
+
+.contact{
+  margin-top: 100px;
+}
+
+ .contact a{
+   border-bottom: 0px;
+ }
+
+ .clipflix {
+ margin-top: 50px;
+ margin-bottom: 20px;
+ }
+
+ .clipflix a{
+ border-bottom: 0px;
+ }
+
+ .article .project{
+  text-decoration: none;
+  margin-right: 0px;
+  border-bottom: 0px;
+  font-size: 1em;
+ }
+
+ img { 
+  opacity: 1; 
+} 
+
+img:hover { 
+  opacity: .7; 
 }

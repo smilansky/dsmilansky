@@ -6,13 +6,11 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %header.navbar.navbar-fixed-top.navbar-inverse
-      %div.navbar-inner
-        %div.container
-          = link_to "Smilansky's Hub", home_path, id: "logo"
-          = link_to "About", about_path, class: "nav-item pull-right"      
-    %div
-      = yield
+    %header.links
+      %a{href: "home"} Home
+      %a{href: "http://rubypry.wordpress.com/"} Blog
+      %a{href: "projects"} Projects
+    = yield
 
 
 
