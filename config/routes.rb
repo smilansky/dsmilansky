@@ -3,5 +3,7 @@ Dsmilansky::Application.routes.draw do
 
   get 'home', to: 'pages#home'
   get 'projects', to: 'pages#projects'
+  match "/blog" => redirect("/blog/")
 
 end
+
