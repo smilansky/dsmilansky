@@ -6,11 +6,16 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %header.links
-      %a{href: "home"} Home
-      %a{href: "blog"} Blog
-      %a{href: "projects"} Projects
-    = yield
-
-
-
+    .container
+      .row
+        .col-md-3
+        .col-md-8
+          %header 
+            %ul.nav.nav-pills
+              %li
+                %a.headerlink{href: "home"} Home
+              %li  
+                %a.headerlink{href: "blog"} Blog
+              %li  
+                %a.headerlink{href: "projects"} Projects
+      = yield                
