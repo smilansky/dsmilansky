@@ -2,6 +2,7 @@
 layout: post
 published: true 
 title: Blogdiggity - A Rails Blog mountable engine powered by Github
+comments: true
 ---
 
 Brian Sam-Bodden, my boss at Integrallis, created a fantastic Rails Blog engine called Blogdiggity last year, which offers numerous advantages over other Rails Blog engines.
