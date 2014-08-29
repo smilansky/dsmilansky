@@ -11,42 +11,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140718171232) do
+ActiveRecord::Schema.define(version: 20140829055117) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "monologue_posts", force: true do |t|
-    t.boolean  "published"
+  create_table "blogdiggity_contributors", force: true do |t|
+    t.string   "company"
+    t.string   "email"
+    t.string   "github_url"
+    t.string   "image"
+    t.string   "location"
+    t.string   "name"
+    t.string   "nickname"
+    t.string   "provider"
+    t.string   "repos_url"
+    t.string   "token"
+    t.string   "uid"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
-    t.string   "title"
-    t.text     "content"
-    t.string   "url"
+  end
+
+  add_index "blogdiggity_contributors", ["nickname"], name: "index_blogdiggity_contributors_on_nickname", unique: true, using: :btree
+
+  create_table "blogdiggity_pages", force: true do |t|
+    t.integer  "repository_id"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "published"
     t.datetime "published_at"
+    t.string   "extension"
   end
 
-  add_index "monologue_posts", ["url"], name: "index_monologue_posts_on_url", unique: true, using: :btree
+  add_index "blogdiggity_pages", ["slug"], name: "index_blogdiggity_pages_on_slug", unique: true, using: :btree
 
-  create_table "monologue_taggings", force: true do |t|
-    t.integer "post_id"
-    t.integer "tag_id"
-  end
-
-  add_index "monologue_taggings", ["post_id"], name: "index_monologue_taggings_on_post_id", using: :btree
-  add_index "monologue_taggings", ["tag_id"], name: "index_monologue_taggings_on_tag_id", using: :btree
-
-  create_table "monologue_tags", force: true do |t|
-    t.string "name"
-  end
-
-  add_index "monologue_tags", ["name"], name: "index_monologue_tags_on_name", using: :btree
-
-  create_table "monologue_users", force: true do |t|
+  create_table "blogdiggity_repositories", force: true do |t|
+    t.integer  "contributor_id"
     t.string   "name"
-    t.string   "email"
-    t.string   "password_digest"
+    t.string   "sha"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
