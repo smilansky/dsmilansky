@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* universal */
 
 html {
@@ -7,10 +7,12 @@ html {
 }
 
 body {
-  padding-top: 50px;
+  font-family: 'Open+Sans';
+  line-height: 2em;
 }
 
-section {
+
+section { 
   overflow: auto;
 }
 
@@ -22,128 +24,95 @@ textarea {
   text-align: center;
 }
 
-.center h1 {
-  margin-bottom: 10px;
+header {
+  margin-left: 30px; 
 }
 
-.well {
-  margin-top: 100px;
+@media (min-width: 768px) {
+  .container {
+    margin-top: 50px; 
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
 }
 
+/* home */
+.homecontent {
+  text-align: center;
+}
 
+.homecontent > a {
+  font-size: 1em;
+}
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
 
 h1 {
-  font-size: 3em;
+  font-size: 4.5em; 
+  margin-bottom: 30px;
+  margin-left: 30px;
   letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.6em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: inherit;
-}
-
-h4 {
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: center;
 }
 
 p {
-  font-size: 1em;
-  line-height: 1em;
-}
-
-/* header */
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav-item {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-.nav-item:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* jumbotron */
-
-.jumbotron {
-  padding: 60px;
-  margin-bottom: 30px;
+  display: block;
   font-size: 21px;
-  font-weight: 200;
-  line-height: 2.1428571435;
+  line-height: 1.5em;
   color: inherit;
-  background-color: #eeeeee;
-}
+} 
 
-.jumbotron h1 {
-  line-height: 1;
-  color: inherit;
-}
-
-.container .jumbotron {
-  border-radius: 6px;
-}
-
-/* buttons */
-
-
-
-.btn-lg {
-  padding: 10px 16px;
-  font-size: 20px;
-  line-height: 1.33;
-  border-radius: 6px;
-  margin-left: 50px;
-}
-
-.btn-primary {
-  color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
-}
+/* links */
 
 a {
-  color: #428bca;
   text-decoration: none;
+  font-size: 2em;
 }
 
 a {
-  background: transparent;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition: border-color .5s ease-in-out,color .5s ease-in-out;
+  transition:.5s;
+}
+
+a:hover { 
+  color:green;
+  text-decoration: none;  
+ }
+
+.contact{
+  margin-top: 40px;
+}
+
+ .contact a{
+   border-bottom: 0px;
+   margin-right: 10px;
+   font-size: 2em;
+ }
+
+ .clipflix {
+ margin-top: 50px;
+ margin-bottom: 20px;
+ }
+
+ .clipflix a{
+ border-bottom: 0px;
+ }
+
+ .article .project{
+  text-decoration: none;
+  margin-right: 0px;
+  border-bottom: 0px;
+  font-size: 1em;
+ }
+
+ img { 
+  opacity: 1; 
+} 
+
+img:hover { 
+  opacity: .7; 
 }

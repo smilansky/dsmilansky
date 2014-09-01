@@ -1,0 +1,9 @@
+markdown: rdiscount
+permalink: /:title.html
+destination: ../../public/blog
+exclude:
+  - Rakefile
+  - Gemfile
+  - .gitignore
+
+excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
