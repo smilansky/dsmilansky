@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Blogdiggity - A Rails Blog mountable engine powered by Github</title>
+   <meta name="author" content="Daniel Smilansky" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/blog/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/blog/css/screen.css" type="text/css" media="screen, projection" />
+
+   <!-- Typekit -->
+   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+
+<div class="site">
+  <div class="title">
+    <a href="/blog">Daniel Smilansky</a>
+    <a class="extra" href="/home">Home</a>
+  </div>
+
+  <div id="post">
+  <h1 class="post_title">Blogdiggity - A Rails Blog mountable engine powered by Github</h1> 
+  <div class="post_date">posted on 22 Jul 2014</div>
+  <p>Brian Sam-Bodden, my boss at Integrallis, created a Rails Blog engine called Blogdiggity last year, which offers numerous advantages over other Rails Blog engines.</p>
+
+<p>This excerpt, taken directly github documentation, sums up Blogdiggity very well:</p>
+
+<blockquote><p>Blogdiggity is a minimalist Rails Blog powered by Git (Github in particular) and Asciidoc. The premise behind Blogdiggity is that you should never have redeploy your app to add, modify or delete blog entries. We (the Integrallis Team) are sick of dealing with database-driven blog engines. In most cases they are slow and bloated and try to become mini-application frameworks which ends up feeling pretty invasive. Blogdiggity deals with one format and one format only; AsciiDoc (http://www.methods.co.nz/asciidoc/). When you add, remove or make changes to an article on the repo, those changes are automatically reflected on your site using the magic of Github post receive hooks (https://help.github.com/articles/post-receive-hooks). Articles are never stored on your app’s db. They are read directly from the repo, rendered into HTML using AsciiDoctor (https://github.com/asciidoctor/asciidoctor) and cached until a post receive hook invalidates the cache, making page loads very fast!</p></blockquote>
+
+<p>Blogdiggity was initially built in early 2013 on Rails 3, and Brian has charged me with cleaning up and updating code, as well as adding new features and patching major holes. Since this project will serve as a large-scale undertaking for me as a developer, I have decided to chronicle my progress with a series of posts covering valuable technical gains I make along the way.</p>
+
+<p>I should add that I found it quite ironic to blog about a blogging engine :)</p>
+
+  
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dsmilansky'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+     
+</div>
+
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+  </ul>
+</div>
+
+
+  <div class="footer">
+    <div class="contact">
+      <p>
+        Daniel Smilansky<br />
+        Find me on <a href="http://www.dsmilansky.com/blog">My Blog</a><br />
+        dsmilansky@gmail.com 
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="http://github.com/smilansky/">github.com/smilansky</a><br />
+        <a href="http://twitter.com/dsmilansky/">twitter.com/dsmilansky</a><br />
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ClickTale Bottom part -->
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript">
+if(document.location.protocol!='https:')
+  document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+if(typeof ClickTale=='function') ClickTale(206,0.3,"www03");
+</script>
+<!-- ClickTale end of Bottom part -->
+
+<!-- Google Analytics -->
+
+<!-- Google Analytics end -->
+
+</body>
+</html>
