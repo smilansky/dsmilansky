@@ -91,7 +91,7 @@ GEM
       treetop (~> 1.4.8)
     maruku (0.7.2)
     mime-types (1.25.1)
-    minitest (5.4.0)
+    minitest (5.4.1)
     multi_json (1.10.1)
     parslet (1.5.0)
       blankslate (~> 2.0)
