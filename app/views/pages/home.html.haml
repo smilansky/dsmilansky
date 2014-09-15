@@ -1,15 +1,19 @@
-.jumbotron
-  %h1 Daniel Smilansky
-  %h4 I am a passionate Web Developer who loves to build things that will make your life better.
-.container
-  .row
-    .col-md-2
-    .col-md-4
-      %a= link_to "ClipFlix", "http://fathomless-coast-3489.herokuapp.com/", class: "btn btn-primary btn-lg"
-      %a= link_to "Repo", "https://github.com/smilansky/ClipFlix", class: "btn btn-success btn-lg"
-      %h2 ClipFlix is a small-scale NetFlix clone built with Ruby on Rails and Postgres.
-      
-    .col-md-4
-      %a= link_to "Blackjack", "http://web21.herokuapp.com", class: "btn btn-primary btn-lg"
-      %h2 A web-based version of blackjack built with Ruby on the Sinatra framework.
-      
+.row
+  .col-md-2
+  .col-md-9
+    %h1 Daniel Smilansky
+.row 
+  .col-md-2
+  .col-md-9  
+    %p.homecontent 
+      Ruby on Rails Developer and Entrepreneur currently working at 
+      = link_to "Integrallis", "http://www.integrallis.com"   
+      who loves to build things that will make your life better. During my spare time, I rock climb, read classic novels and am a part-time Hummus junkie.
+
+
+.center.contact
+  = link_to "Email", "mailto:dsmilansky@gmail.com"
+  = link_to "Github", "https://github.com/smilansky"
+  = #link_to image_tag('gmail.png', height: "100px", width: "100px"), "mailto:dsmilansky@gmail.com"
+  = #link_to image_tag('GitHub-Mark-64px.png'), "https://github.com/smilansky"
+
