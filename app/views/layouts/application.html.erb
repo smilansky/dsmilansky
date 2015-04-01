@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Smilansky's Hub</title>
+    <%= stylesheet_link_tag "application", media: "all", :"data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="canvas container">
+      <div class="row" id="header">
+        <a id="home-link" href="home"><h1 id="logo">DANIEL SMILANSKY</h1></a>
+        <div id="topNav">
+          <nav>
+            <ul>
+              <li><a href="work">Work</a></li>
+              <li><a href="https://docs.google.com/document/d/1W2LjBAvNLP9djUX9_Jw4hw-LTSU19VnHI6SuG5Ssv4I/edit?usp=sharing">Resume</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="row page-divider">
+      </div>
+      <%= yield %>                
+      <div class="row footer-page-divider">
+      </div>
+
+      <div class="row">
+      <footer>
+
+        <div id="footertext">
+
+          <p id="footer"> 
+          <span style="font-size:16px">&nbsp;</span>
+          <strong>©&nbsp;</strong>
+
+          Daniel Smilansky 2015</p>
+        </div>
+      </footer>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
