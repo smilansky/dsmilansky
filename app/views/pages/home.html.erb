@@ -1,22 +1,53 @@
 
 <div class="row">
-   <div class="home-column col-md-5 col-md-offset-2">
+  <div class="home-column col-md-8 col-md-offset-2">
     <h3 id="column-header"></h3>
 
-<p id="content"> 
-I am a Ruby on Rails Developer and Entrepreneur who loves to build things that will make your life better. During my spare time, I rock climb, read and am a part-time Hummus junkie.
-</p>
+    <p id="content"> 
+    Welcome! I like to build things that will make your life better. I also rock climb and am a part-time Hummus junkie.
+    </p>
+  </div>
+
+
+</div>
+
+<div class="row">
+  <div class="home-column col-md-8 col-md-offset-2">
+    <h3 id="column-header" class="center">Projects</h3>
+
+    <p id="content">
+    <%= link_to 'Gembutler', 'http://www.gembutler.io' %>
+    - A dependency management automation tool for Rails applications.
+    </p>
+    <p id="content">
+    <%= link_to 'ClipFlix', 'http://fathomless-coast-3489.herokuapp.com' %>
+    - A NetFlix clone I built for fun that integrates with Stripe.
+    </p>
+    <p id="content">
+    <%= link_to '20onesix', 'http://www.20onesix.com' %>
+    - A 2016 Presidential Candidate Cheat Sheet.
+    </p>
+
+  </div>
+
+
+</div>
+
+<div class="row">
+  <div class="home-column col-md-8 col-md-offset-2">
+    <h3 id="column-header" class="center">Contact</h3>
+
+    <div class="center">
+      <%= link_to 'https://github.com/smilansky', :class => 'icon-link' do %>
+        <i class="fa fa-github fa-4x"></i>
+      <% end %>
+      <%= mail_to "dsmilansky@gmail.com", :class=> 'icon-link' do %>
+        <i class="fa fa-envelope fa-4x" data-toggle="email" title=""></i>
+        <% end %>
+        <i class="fa fa-phone fa-4x" data-toggle="phone" title=""></i> 
     </div>
-
-<div class="home-column col-md-4 col-md-offset-1">
-
-  <h3>
-
-<!-- www.intagme.com -->
-<!-- www.intagme.com -->
-<iframe src="http://www.intagme.com/in/?u=c21pbGFuc2t5fHNsfDI1MHwyfDN8fHllc3w1fHVuZGVmaW5lZHx5ZXM=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:265px; height: 265px" ></iframe></div>
+  </div>
 
 
- 
 </div>
 
