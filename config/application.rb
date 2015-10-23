@@ -20,6 +20,7 @@ module Dsmilansky
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.assets.precompile += ['blogdiggity/blogdiggity.css', 'blogdiggity/blogdiggity.js']
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf|otf)$/
     config.assets.enabled = true 
     config.assets.paths << "#{Rails.root}/app/assets/fonts" 
   end
