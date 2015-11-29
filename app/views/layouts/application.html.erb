@@ -12,10 +12,12 @@
   <body>
     <div class="canvas container">
       <div class="row" id="header">
-        <a id="home-link" href="home"><h1 id="logo">DANIEL SMILANSKY</h1></a>
+        <a id="home-link" href="<%= home_path %>"><h1 id="logo">DANIEL SMILANSKY</h1></a>
         <div id="topNav">
           <nav>
             <ul>
+              <li><%= link_to 'fun', fun_path %></li>
+
               <li><a href="https://docs.google.com/document/d/1W2LjBAvNLP9djUX9_Jw4hw-LTSU19VnHI6SuG5Ssv4I/edit?usp=sharing">Resume</a></li>
             </ul>
           </nav>
@@ -25,7 +27,9 @@
 
       <div class="row page-divider">
       </div>
+      <div class="application">
       <%= yield %>                
+      </div>
       <div class="row footer-page-divider">
       </div>
 

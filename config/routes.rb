@@ -3,7 +3,8 @@ Dsmilansky::Application.routes.draw do
 
 
   get 'home', to: 'pages#home'
-  get 'work', to: 'pages#work'
-  get 'contact', to: 'pages#contact'
+  
+  get 'fun', to: 'pages#fun'
+  get 'fun/gameoflife', to: 'pages#gameoflife', as: 'gameoflife'
 end
 

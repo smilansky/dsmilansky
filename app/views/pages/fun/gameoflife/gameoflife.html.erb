@@ -1,0 +1,41 @@
+<%= stylesheet_link_tag "gameOfLife" %>
+
+<div class="row">
+  <div class="home-column col-md-8 col-md-offset-2">
+    <h3 id="column-header" class="center">Game of Life</h3>
+
+  </div>
+
+
+</div>
+
+<div class="row" id="gameOfLife">
+  <div id="board">
+
+    <table id="boardTable">
+
+    </table>
+    <div id="controls">
+      <button href="#" id="nextButton">Next</button>
+      <select id="boardSetup">
+
+        <option value="flower">Flower</option> 
+        <option value="glider">Glider</option> 
+        <option value="blinker">Blinker</option> 
+      </select>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+  <p></p>
+<p id="content">
+  Game of Life is a 'cellular automation' developed by Cambridge mathematician John Conway. This game became widely known when it was mentioned in an <a href="http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm">article</a> published by Scientific American in 1970. It consists of a collection of cells which, based on a few mathematical rules, can live, die or multiply. Depending on the initial conditions, the cells form various patterns throughout the course of the game. Developed using Javascript, CSS animations and transitions. 
+
+    </p>
+
+    </div>
+<%= javascript_include_tag "gameOfLife" %>
+
