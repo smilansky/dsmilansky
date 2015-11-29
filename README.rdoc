@@ -1,3 +1,11 @@
 == Smilansky's Hub 
 
+##Deployment##
+
+To compile assets, run:
+
+```
+rm -r -f public/assets
+RAILS_ENV=production bundle exec rake assets:precompile
+```
 
