@@ -13,7 +13,7 @@ gem 'uglifier', '2.1.1'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 2.5.3'
 gem 'jbuilder', '~> 1.0.2'
-gem 'unicorn'
+gem 'puma'
 
 group :development do 
   gem 'pry'
