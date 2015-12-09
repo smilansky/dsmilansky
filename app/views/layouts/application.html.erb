@@ -28,6 +28,7 @@
       <div class="row page-divider">
       </div>
       <div class="application">
+        <%= render partial: 'shared/flash_messages', flash: flash %>
       <%= yield %>                
       </div>
       <div class="row footer-page-divider">

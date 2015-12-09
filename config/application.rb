@@ -23,5 +23,19 @@ module Dsmilansky
     config.assets.precompile += %w( gameOfLife.js gameOfLife.css )
     config.assets.enabled = true 
     config.assets.paths << "#{Rails.root}/app/assets/fonts" 
+
+    config.action_mailer.smtp_settings = {
+      :address              => "smtpout.secureserver.net",
+      :port                 => 80,
+      :domain               => "domain.com",
+      :user_name            => "myemail@domain.com",
+      :password             => "mypass",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "domain.com"
+    }    
   end
 end

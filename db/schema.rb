@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140829055117) do
+ActiveRecord::Schema.define(version: 20151129235709) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blogdiggity_contributors", force: true do |t|
+  create_table "blogdiggity_contributors", force: :cascade do |t|
     t.string   "company"
     t.string   "email"
     t.string   "github_url"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20140829055117) do
 
   add_index "blogdiggity_contributors", ["nickname"], name: "index_blogdiggity_contributors_on_nickname", unique: true, using: :btree
 
-  create_table "blogdiggity_pages", force: true do |t|
+  create_table "blogdiggity_pages", force: :cascade do |t|
     t.integer  "repository_id"
     t.string   "slug"
     t.datetime "created_at"
@@ -46,10 +46,18 @@ ActiveRecord::Schema.define(version: 20140829055117) do
 
   add_index "blogdiggity_pages", ["slug"], name: "index_blogdiggity_pages_on_slug", unique: true, using: :btree
 
-  create_table "blogdiggity_repositories", force: true do |t|
+  create_table "blogdiggity_repositories", force: :cascade do |t|
     t.integer  "contributor_id"
     t.string   "name"
     t.string   "sha"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
