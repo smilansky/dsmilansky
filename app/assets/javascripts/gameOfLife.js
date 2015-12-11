@@ -160,5 +160,5 @@ var lifeBoard = (function() {
               return publicAPI;
 })();
 
-window.onload = lifeBoard.main;
-
+$(document).ready(lifeBoard.main);
+$(document).on('page:load', lifeBoard.main);
