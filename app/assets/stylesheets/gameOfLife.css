@@ -1,5 +1,4 @@
 #gameOfLife {
-  width: 100%;
 }
 #board {
   margin: 0 auto;
@@ -15,7 +14,7 @@
 
 .alive {
 display: inline-block;
-  background-color: #0074d9;
+  background-color: #FF9F00;
   height: 20px;
   width: 20px;
   font-size: 1px;
@@ -31,7 +30,7 @@ display: inline-block;
 
 .dead {
 display: inline-block;
-  background-color: green;
+  background-color: #0074d9;
   height: 20px;
   width: 20px;
   font-size: 1px;
