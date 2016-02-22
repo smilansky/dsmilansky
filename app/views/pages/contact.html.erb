@@ -1,3 +1,4 @@
+
 <div id="contact-form">
   <%= form_for @contact, :url => {:action => 'create_contact', :controller => 'pages'} do |f| %>
     <div class="form-group">
@@ -17,3 +18,17 @@
   <% end %>
 </div>
 
+<div class="row contact">
+  <div class="home-column col-md-8 col-md-offset-2">
+        <div class="contact-info center">
+      <%= link_to 'https://github.com/smilansky', :class => 'icon-link' do %>
+        <i class="fa fa-github fa-4x"></i>
+      <% end %>
+      <%= mail_to "dsmilansky@gmail.com", :class=> 'icon-link' do %>
+        <i class="fa fa-envelope fa-4x" data-toggle="email" title=""></i>
+      <% end %>
+    </div>
+  </div>
+
+
+</div>
