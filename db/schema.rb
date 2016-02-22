@@ -11,53 +11,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151129235709) do
+ActiveRecord::Schema.define(version: 20160221054008) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "blogdiggity_contributors", force: :cascade do |t|
-    t.string   "company"
-    t.string   "email"
-    t.string   "github_url"
-    t.string   "image"
-    t.string   "location"
-    t.string   "name"
-    t.string   "nickname"
-    t.string   "provider"
-    t.string   "repos_url"
-    t.string   "token"
-    t.string   "uid"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "blogdiggity_contributors", ["nickname"], name: "index_blogdiggity_contributors_on_nickname", unique: true, using: :btree
-
-  create_table "blogdiggity_pages", force: :cascade do |t|
-    t.integer  "repository_id"
-    t.string   "slug"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "published"
-    t.datetime "published_at"
-    t.string   "extension"
-  end
-
-  add_index "blogdiggity_pages", ["slug"], name: "index_blogdiggity_pages_on_slug", unique: true, using: :btree
-
-  create_table "blogdiggity_repositories", force: :cascade do |t|
-    t.integer  "contributor_id"
-    t.string   "name"
-    t.string   "sha"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
     t.text     "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "friendly_id_slugs", force: :cascade do |t|
+    t.string   "slug",                      null: false
+    t.integer  "sluggable_id",              null: false
+    t.string   "sluggable_type", limit: 50
+    t.string   "scope"
+    t.datetime "created_at"
+  end
+
+  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.string   "author"
+    t.text     "content"
+    t.text     "markdown_content"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

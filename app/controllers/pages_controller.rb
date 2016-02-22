@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def home
+  def contact 
     @contact = Contact.new
   end
 
@@ -7,11 +7,11 @@ class PagesController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.valid? 
       @contact.save
-      flash[:success] = "Your inquiry has been submitted."
+      flash.now[:success] = "Your inquiry has been submitted."
       redirect_to action: 'home'
     else 
-      flash[:error] = "Please see errors below."
-      render :home
+      flash.now[:error] = "Please see errors below."
+      render :contact
     end
   end
 

@@ -1,0 +1,13 @@
+<body cz-shortcut-listen="true">
+  <div class="container login-container">
+
+    <h2 class="login-title">Blog Admin Panel</h2>
+    <%= form_tag admin_path, :class => "form-signin" do %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= text_field_tag :email, nil, :placeholder => "Enter your email", :id => "email", :class => "input-xlarge focused" %>
+      <%= password_field_tag :password, nil, :placeholder => "Enter your Password", :id => "password", :class => "input-xlarge focused" %>
+      <%= submit_tag :login, :class => "btn btn-primary", :value => "Login" %>
+  </div>
+<% end %>
+</body>
+

@@ -16,9 +16,12 @@
         <div id="topNav">
           <nav>
             <ul>
+              <li><%= link_to 'blog', blog_path %></li>
               <li><%= link_to 'fun', fun_path %></li>
-
-              <li><a href="https://docs.google.com/document/d/1W2LjBAvNLP9djUX9_Jw4hw-LTSU19VnHI6SuG5Ssv4I/edit?usp=sharing">Resume</a></li>
+              <li><%= link_to 'contact', contact_path %></li>
+              <% if current_user %>
+                <li><%= link_to 'logout', logout_path %></li>
+                <% end %>
             </ul>
           </nav>
         </div>
@@ -43,7 +46,7 @@
             <span style="font-size:16px">&nbsp;</span>
             <strong>©&nbsp;</strong>
 
-            Daniel Smilansky 2015</p>
+            Daniel Smilansky 2016</p>
           </div>
         </footer>
       </div>

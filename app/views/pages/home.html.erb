@@ -3,7 +3,7 @@
   <h3 id="column-header"></h3>
 
   <p id="content"> 
-  Welcome! I build web applications using Javascript, Meteor.js and Node.js and hope to improve the lives of others. I also rock climb and am a part-time Hummus junkie.
+  I build web applications with the goal of improving the lives of others. I also rock climb and am a part-time Hummus junkie.
   </p>
 </div>
 
@@ -13,30 +13,7 @@
 
 <div class="row contact">
   <div class="home-column col-md-8 col-md-offset-2">
-    <h3 id="column-header" class="center">Contact</h3>
-    <div id="contact-form">
-      <p>I am available for consulting projects on an ongoing basis. Please contact me below with details of what you are looking for and I will be sure to reach out as promptly as possible.</p>
-      <%= form_for @contact, :validate => true,  :url => {:action => 'create_contact', :controller => 'pages'} do |f| %>
-      <div class="form-group">
-        <td><%= f.label(:name) %></td>
-        <td><%= f.text_field(:name, :class => "form-control") %></td>
-      </div>
-      <div class="form-group">
-        <td><%= f.label(:email) %></td>
-        <td><%= f.text_field(:email, :class => "form-control") %></td>
-      </div>
-      <div class="form-group">
-        <td><%= f.label(:message) %></td>
-        <td><%= f.text_area(:message, :class => "form-control") %></td>
-      </div>
-      <td>&nbsp;</td>
-      <div id="contact-submit">
-      <td><%= submit_tag("Send Inquiry", :class => "btn btn-primary submit-button") %></td>
-      </div>
-
-    <% end %>
-    </div>
-    <div class="contact-info center">
+        <div class="contact-info center">
       <%= link_to 'https://github.com/smilansky', :class => 'icon-link' do %>
         <i class="fa fa-github fa-4x"></i>
       <% end %>

@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-md-offset-4">
+      <%= form_for @post do |f| %>
+        <fieldset>
+          <div class="control-group">
+            <%= f.label :title, :class => "control-label" %>
+            <div class="controls">
+              <%= f.text_field :title %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <%= f.label :author, :class => "control-label" %>
+            <div class="controls">
+              <%= f.text_field :author %>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <%= f.label :content, :class => "control-label" %>
+            <div class="controls">
+              <%= f.text_area :content, size: "30x10" %>
+            </div>
+
+          </div>
+          <div class="control-group">
+            <div class="controls">
+          <%= f.submit 'create post', :class => 'btn btn-primary' %>
+          </div>
+          </div>
+        </fieldset>
+      <% end %>
+
+      <%= button_to "Back", new_post_path, :method => :get, :class => 'btn btn-danger' %>
+    </div>
+  </div>
+</div>

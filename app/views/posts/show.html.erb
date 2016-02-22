@@ -1,0 +1,11 @@
+<div class="post normal-text">
+  <h3 class="post-title"><%= @post.title %></h3>
+  <div class="post-content">
+    <div class="post-body">
+      <%= @post.markdown_content.html_safe %>
+    </div>
+    <div class="well post-footer">
+      <p>Posted by <em><%= @post.author %> on <%= post_date(@post) %></em></p>
+    </div>
+  </div>
+</div>

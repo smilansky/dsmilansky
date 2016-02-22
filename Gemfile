@@ -6,14 +6,16 @@ gem 'rails', '4.2.4'
 gem 'pg'
 
 gem 'haml'
+gem 'bcrypt'
 gem 'bootstrap-sass', '~> 3.0.0.0.rc'
 gem 'sass-rails', '~> 4.0.1'
-gem 'client_side_validations', github: 'DavyJonesLocker/client_side_validations'
 gem 'uglifier', '2.1.1'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 2.5.3'
 gem 'jbuilder', '~> 1.0.2'
 gem 'puma'
+gem 'redcarpet'
+gem 'friendly_id', '~> 5.1.0', :require => 'friendly_id'
 
 group :development do 
   gem 'pry'

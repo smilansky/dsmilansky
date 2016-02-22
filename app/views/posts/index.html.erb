@@ -1,0 +1,13 @@
+<% @posts.each do |post| %>
+<div class="post normal-text">
+  <h3 class="post-title"><%= link_to post.title, view_posts_path(post) %></h3>
+  <div class="post-content">
+    <div class="post-body">
+      <%= post.markdown_content.html_safe %>
+      </div>
+      <div class="well post-footer">
+        <p>Posted by <b><%= post.author %> on <%= post_date(post) %></b></p>
+    </div>
+  </div>
+</div>
+<% end %>
