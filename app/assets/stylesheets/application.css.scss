@@ -9,7 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require custom.css.scss 
+ *= require custom.scss.erb 
  *= require contact.css.scss
  *= require post.css.scss
  */
