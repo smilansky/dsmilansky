@@ -6,6 +6,8 @@ Dsmilansky::Application.routes.draw do
   
   get 'fun', to: 'pages#fun'
   get 'contact', to: 'pages#contact'
+  get 'javascript', to: 'pages#javascript'
+
   get 'fun/gameoflife', to: 'pages#gameoflife', as: 'gameoflife'
 
   post 'create_contact', to: 'pages#create_contact'

@@ -22,6 +22,10 @@ class PagesController < ApplicationController
     render 'pages/fun/gameoflife/gameoflife'
   end
 
+  def javascript
+    render 'pages/js_facts'
+  end
+
   private
 
   def contact_params
