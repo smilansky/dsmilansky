@@ -1,13 +1,13 @@
 @import "bootstrap";
 @font-face {
   font-family: "futura";
-  src: url(asset_path('FuturaLT-Book.ttf')) format("truetype");
+  src: url(asset-path('FuturaLT-Book.ttf')) format("truetype");
 }
 
 
 @font-face {
   font-family: "proxima nova";
-  src: url(asset_path('ProximaNova-Regular.otf')) format("opentype");
+  src: url(asset-path('ProximaNova-Regular.otf')) format("opentype");
 }
 
 /* universal */
