@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="canvas container">
@@ -18,7 +19,6 @@
             <ul>
               <li><%= link_to 'blog', blog_path %></li>
               <li><%= link_to 'fun', fun_path %></li>
-              <li><%= link_to 'javascript', javascript_path %></li>
               <li><%= link_to 'contact', contact_path %></li>
               <% if current_user %>
                 <li><%= link_to 'logout', logout_path %></li>
