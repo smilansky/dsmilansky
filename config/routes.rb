@@ -13,8 +13,8 @@ Dsmilansky::Application.routes.draw do
   post 'create_contact', to: 'pages#create_contact'
 
   resources :posts, except: [:show, :index]  
-  get 'blog', to: 'posts#index'
-  get '/blog/:id', to: 'posts#show', :as => "view_posts"
+  get 'articles', to: 'posts#index'
+  get '/articles/:id', to: 'posts#show', :as => "view_posts"
   get 'posts', to: 'posts#admin'
 
   

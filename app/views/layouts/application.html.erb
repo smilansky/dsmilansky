@@ -12,50 +12,65 @@
   </head>
 
   <body>
-    
-    <div class="wrap">
 
-      <div class="row top-nav">
-        
-        <div id="nav-list">
-            <ul>
-              <li><%= link_to 'blog', blog_path %></li>
-              <li><%= link_to 'fun', fun_path %></li>
-              <li><%= link_to 'Contact', contact_path %></li>
-              <% if current_user %>
-                <li><%= link_to 'logout', logout_path %></li>
-              <% end %>
-            </ul>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
 
-      </div> 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><%= link_to 'articles', articles_path %></li>
+            <li><%= link_to 'fun', fun_path %></li>
+            <li><%= link_to 'Contact', contact_path %></li>
+            <% if current_user %>
+              <li><%= link_to 'logout', logout_path %></li>
+            <% end %>
 
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /nav -->    
+
+    <div class="wrap">
       <div class="container">
         <%= render partial: 'shared/flash_messages', flash: flash %>
         <%= yield %>                
-      </div> 
 
 
-    </div>
-
+      </div>
+    </div> 
     <div class="row footer">
 
       <div class="row footer-page-divider">
       </div>
 
 
-        <div class="footertext">
+      <div class="footertext">
 
-          <p class="footer"> 
-          <span style="font-size:16px">
-            &nbsp;
-          </span>
-          <strong>©&nbsp;</strong>
+        <p class="footer"> 
+        <span style="font-size:16px">
+          &nbsp;
+        </span>
+        <strong>©&nbsp;</strong>
 
-          Daniel Smilansky 2016
-          </p>
-        </div>
+        Daniel Smilansky 2016
+        </p>
+
+      </div>
+
     </div>  
+
+
     </div>
   </body>
 </html>

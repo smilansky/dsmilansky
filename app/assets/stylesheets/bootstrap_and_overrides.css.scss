@@ -1,0 +1,45 @@
+@import "bootstrap";
+
+/* Navbar */
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.navbar-nav {
+  float:none;
+  font-family: 'futura';
+  list-style-image: none; 
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  float: none;
+  letter-spacing: 1px;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+.navbar-nav li a {
+  color: #999;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar-nav li a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0px;
+}

@@ -19,7 +19,7 @@
 }
 
 .submit-button {
-  width: 200px;
+  width: 100%;
 }
 
 .icon-link {
@@ -27,8 +27,9 @@
   text-decoration: none; 
 }
 
-.icon-link a:hover {
+.icon-link:hover {
   border: none; 
+  text-decoration: none;
 }
 
 
