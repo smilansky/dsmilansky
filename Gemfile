@@ -7,8 +7,8 @@ gem 'pg'
 
 gem 'haml'
 gem 'bcrypt'
-gem 'bootstrap-sass', '~> 3.0.0.0.rc'
-gem 'sass-rails', '~> 4.0.1'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'sass-rails'
 gem 'uglifier', '2.1.1'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 2.5.3'
@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 1.0.2'
 gem 'puma'
 gem 'redcarpet'
 gem 'friendly_id', '~> 5.1.0', :require => 'friendly_id'
+gem 'sprockets-rails', :require => 'sprockets/rails/version'
 
 group :development do 
   gem 'pry'

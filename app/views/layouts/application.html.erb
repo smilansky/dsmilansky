@@ -10,48 +10,52 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
-    <div class="canvas container">
-      <div class="row" id="header">
-        <a id="home-link" href="<%= home_path %>"><h1 id="logo">DANIEL SMILANSKY</h1></a>
-        <div id="topNav">
-          <nav>
+    
+    <div class="wrap">
+
+      <div class="row top-nav">
+        
+        <div id="nav-list">
             <ul>
               <li><%= link_to 'blog', blog_path %></li>
               <li><%= link_to 'fun', fun_path %></li>
-              <li><%= link_to 'Consulting', contact_path %></li>
+              <li><%= link_to 'Contact', contact_path %></li>
               <% if current_user %>
                 <li><%= link_to 'logout', logout_path %></li>
-                <% end %>
+              <% end %>
             </ul>
-          </nav>
         </div>
 
-      </div>
+      </div> 
 
-      <div class="row page-divider">
-      </div>
-      <div class="application">
+      <div class="container">
         <%= render partial: 'shared/flash_messages', flash: flash %>
-      <%= yield %>                
-      </div>
+        <%= yield %>                
+      </div> 
+
+
+    </div>
+
+    <div class="row footer">
+
       <div class="row footer-page-divider">
       </div>
 
-      <div class="row">
-        <footer>
 
-          <div id="footertext">
+        <div class="footertext">
 
-            <p id="footer"> 
-            <span style="font-size:16px">&nbsp;</span>
-            <strong>©&nbsp;</strong>
+          <p class="footer"> 
+          <span style="font-size:16px">
+            &nbsp;
+          </span>
+          <strong>©&nbsp;</strong>
 
-            Daniel Smilansky 2016</p>
-          </div>
-        </footer>
-      </div>
-    </div>
+          Daniel Smilansky 2016
+          </p>
+        </div>
+    </div>  
     </div>
   </body>
 </html>
