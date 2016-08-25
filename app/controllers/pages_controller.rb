@@ -15,7 +15,7 @@ class PagesController < ApplicationController
     end
   end
 
-  def fun
+  def work
   end
 
   def gameoflife

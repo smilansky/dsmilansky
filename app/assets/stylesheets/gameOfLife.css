@@ -1,18 +1,20 @@
 #gameOfLife {
 }
+
 #board {
   margin: 0 auto;
+  width: 50%;
 }
 #boardTable {
   margin-bottom: 30px;
 }
- #controls {
-   margin: 0 auto;
-   width: 50%;
- }
+#controls {
+  margin: 0 auto;
+  width: 50%;
+}
 
 .alive {
-display: inline-block;
+  display: inline-block;
   background-color: #FF9F00;
   height: 20px;
   width: 20px;
@@ -28,7 +30,7 @@ display: inline-block;
 }
 
 .dead {
-display: inline-block;
+  display: inline-block;
   background-color: #0074d9;
   height: 20px;
   width: 20px;

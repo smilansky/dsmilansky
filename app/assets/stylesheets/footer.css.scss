@@ -1,7 +1,14 @@
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+
 .footer-page-divider {
   border-bottom: 1px solid #ddd;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-text{

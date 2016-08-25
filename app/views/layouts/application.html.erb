@@ -13,6 +13,7 @@
 
   <body>
 
+    <div class="wrap">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -23,13 +24,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+<a class="navbar-brand" id="home-link" href="/home"><h1 id="logo">DANIEL SMILANSKY</h1></a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><%= link_to 'articles', articles_path %></li>
-            <li><%= link_to 'fun', fun_path %></li>
+            <li><%= link_to 'work', work_path %></li>
             <li><%= link_to 'Contact', contact_path %></li>
             <% if current_user %>
               <li><%= link_to 'logout', logout_path %></li>
@@ -41,7 +44,10 @@
       </div><!-- /.container-fluid -->
     </nav><!-- /nav -->    
 
-    <div class="wrap">
+    
+    <div class="page-divider">
+    </div>
+
       <div class="container">
         <%= render partial: 'shared/flash_messages', flash: flash %>
         <%= yield %>                
@@ -49,7 +55,9 @@
 
       </div>
     </div> 
-    <div class="row footer">
+
+    <footer class="footer">
+    <div class="container">
 
       <div class="row footer-page-divider">
       </div>
@@ -57,7 +65,7 @@
 
       <div class="footertext">
 
-        <p class="footer"> 
+        <p> 
         <span style="font-size:16px">
           &nbsp;
         </span>
@@ -68,7 +76,8 @@
 
       </div>
 
-    </div>  
+    </div><!-- Footer -->  
+    </div><!-- Footer Container -->
 
 
     </div>

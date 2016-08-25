@@ -1,8 +1,9 @@
 'use strict';
+
 var lifeBoard = (function() {
   var publicAPI,
-  xsize = 20,
-  ysize = 20,
+  xsize = 10,
+  ysize = 10,
   Board = [],
   dead = 0,
   alive = 1,
@@ -101,9 +102,9 @@ var lifeBoard = (function() {
                 }
 
                 if (BoardSetup === "blinker") {
-                  Board[1][0] = 1;
-                  Board[1][1] = 1;
-                  Board[1][2] = 1;
+                  Board[5][4] = 1;
+                  Board[5][5] = 1;
+                  Board[5][6] = 1;
                 } else if (BoardSetup === "glider") {
                   Board[2][0] = 1;
                   Board[2][1] = 1;
@@ -111,24 +112,24 @@ var lifeBoard = (function() {
                   Board[1][2] = 1;
                   Board[0][1] = 1;
                 } else if (BoardSetup === "flower") {
+                  Board[2][3] = 1;
+                  Board[3][3] = 1;
+                  Board[4][3] = 1;
+                  Board[7][3] = 1;
+                  Board[8][3] = 1;
+                  Board[9][3] = 1;
+                  Board[10][3] = 1;
+                  Board[2][4] = 1;
+                  Board[3][4] = 1;
+                  Board[4][4] = 1;
+                  Board[5][4] = 1;
+                  Board[2][5] = 1;
+                  Board[3][5] = 1;
                   Board[4][6] = 1;
                   Board[5][6] = 1;
                   Board[6][6] = 1;
                   Board[7][6] = 1;
                   Board[8][6] = 1;
-                  Board[9][6] = 1;
-                  Board[10][6] = 1;
-                  Board[4][7] = 1;
-                  Board[6][7] = 1;
-                  Board[8][7] = 1;
-                  Board[10][7] = 1;
-                  Board[4][8] = 1;
-                  Board[5][8] = 1;
-                  Board[6][8] = 1;
-                  Board[7][8] = 1;
-                  Board[8][8] = 1;
-                  Board[9][8] = 1;
-                  Board[10][8] = 1;
                 }
 
                 _drawBoard(Board);

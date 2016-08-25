@@ -4,7 +4,6 @@
 .navbar-default {
   background-color: #ffffff;
   border-color: #ffffff;
-  margin-bottom: 40px;
   margin-top: 30px;
   text-align: center;
 }
@@ -29,7 +28,7 @@
 .navbar-nav li a {
   color: #999;
   display: inline-block;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 26px;
   padding: 15px 0;
   text-align: center;
@@ -43,3 +42,30 @@
 .navbar-nav li:last-child {
   margin-right: 0px;
 }
+
+#logo {
+  color: #111;
+  float: left;
+  font-family: 'futura';
+  font-weight: 400;
+  letter-spacing: 0.05em;  
+  line-height: 1.2em;
+  margin: 0px;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+
+  #logo {
+    font-size: 26px; 
+  }
+
+}
+
+@media (max-width: 768px){ 
+  #logo {
+    font-size: 18px;
+  }
+}
+
+

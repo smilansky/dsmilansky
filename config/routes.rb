@@ -4,7 +4,7 @@ Dsmilansky::Application.routes.draw do
 
   get 'home', to: 'pages#home'
   
-  get 'fun', to: 'pages#fun'
+  get 'work', to: 'pages#work'
   get 'contact', to: 'pages#contact'
   get 'javascript', to: 'pages#javascript'
 
