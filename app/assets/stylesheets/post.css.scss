@@ -1,6 +1,5 @@
-.post {
-  margin-bottom: 40px; 
-}
+
+
 .post-footer {
   margin-top: 12px;
   border-top: 1px solid #eee;
@@ -9,12 +8,16 @@
 .post-body {
   font-size: 16px;
   font-family: "Trebuchet MS", Verdana, sans-serif;
+  margin-bottom: 40px;
 }
 
 .post-title {
+  color: #337ab7; 
   font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "Georgia", serif;
+  margin-bottom: 20px;
 }
 
-.post-title:hover {
-  text-decoration: none !important;
+.post-title a:hover {
+  text-decoration: none;
 }
+
